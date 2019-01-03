@@ -14,6 +14,6 @@ class Program {
         spacelines.add("Virgin Galactic");
 
         System.out.println("Spaceline " + ticket.RandomSpaceline(spacelines));
-        System.out.println("Days: " + ticket.getNumberOfDays(minSpeed, distanceToMars));
+        System.out.println("Days: " + ticket.getNumberOfDays(ticket.randomSpeed(minSpeed, maxSpeed), distanceToMars));
     }
 }

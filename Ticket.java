@@ -9,6 +9,10 @@ class Ticket {
         return hours / 24;
     }
 
+    public int randomSpeed(int min, int max){
+        return rand.nextInt((max - min)+1) + min;
+    } 
+
     public String RandomSpaceline(ArrayList<String> spacelines) {
         Integer index = rand.nextInt(spacelines.size());
         return spacelines.get(index);
